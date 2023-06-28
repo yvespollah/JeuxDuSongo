@@ -1,0 +1,88 @@
+*{
+    /*on enleve tout le style qui est donner par defeaut au element*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body{
+    max-width: 100vw; /*pour dire que l'on prend toute la largeur de l'ecran possible*/
+    height: 100vh; /*pour dire que l'on prend toute la largeur de l'ecran possible*/
+    display: flex; /* pour mettre les element au centre*/
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+
+  background-color: rgb(174, 235, 206);
+
+ }
+
+ .cardre{
+    background-color: rgb(253, 158, 57);
+    padding: 15px;
+    border-radius: 5px;
+ }
+
+ .box{
+    display: grid; 
+    grid-template-columns: repeat(7,110px); /*repete moi 5 culonne de 50px de large*/
+    grid-template-rows: repeat(3,110px);
+    
+ }
+ h1{
+   color: aliceblue;
+ }
+
+ .button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+
+  /* margin: 4px 2px; */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  
+  border: 15px solid #684911;
+  border-collapse: collapse;
+}
+
+/*  button{
+   outline: none;
+   border-radius: 5px;
+   font-size: 40px;
+ }
+
+ .but{
+  background-color: rgb(212, 210, 210);
+  color: black;
+ }
+ */
+ button[data-key="111"]{
+   grid-column: span 2;
+   margin-left: 40px;
+ }
+
+ button[data-key="222"]{
+   grid-column: span 2;
+   margin-right: 40px;
+ }
+
+ button[data-key="110"]{
+   grid-column: span 3;
+ }
+
+ button[data-key="110"]{
+   background-color: rgb(231, 186, 140);
+ }
+
+ h2{
+  text-align: center;
+  padding: 20px;
+ }
